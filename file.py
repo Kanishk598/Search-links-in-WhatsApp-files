@@ -1,4 +1,4 @@
-file1 = open(r"WhatsApp Chat with Friend.txt", "r") # Here, change the name of the WhatsApp export file.
+file1 = open(r"input.txt", "r") # Here, change the name of the WhatsApp export file.
 file2 = open(r"Links.txt", "a") # This file will be generated with all the links in the export file.
 file1.seek(0,0)
 data = file1.read()
