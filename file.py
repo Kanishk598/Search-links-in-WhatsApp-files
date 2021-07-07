@@ -4,9 +4,7 @@ file1.seek(0,0)
 data = file1.read()
 a = []
 
-file2.write("<!DOCTYPE html>")
-file2.write("<html>")
-file2.write("<body>")
+file2.write("<!DOCTYPE html><html><body>")
 
 while not data.find('http')== -1:
     data = data.replace(data[0:(data.find('http')-1)], "")[1:]
@@ -16,7 +14,6 @@ while not data.find('http')== -1:
     file2.write(a[-1])
     file2.write('<br>')
 
-file2.write('</body>')
-file2.write('</html>')
+file2.write('</body></html>')
 file1.close()
 file2.close()
