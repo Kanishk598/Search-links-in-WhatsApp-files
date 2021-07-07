@@ -6,4 +6,4 @@
 2. Export your WhatsApp chat, and rename it to `input.txt`
 3. Use the command on terminal to run the file and get all links: `python file.py`
 
-All your links are now in the `Output.txt` file.
+All your links are now in the `Links.txt` file.
