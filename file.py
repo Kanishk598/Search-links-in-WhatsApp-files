@@ -8,12 +8,8 @@ while not data.find('http')== -1:
     data = data.replace(data[0:(data.find('http')-1)], "")[1:]
     a.append(data[0:data.find('\n')])
     data = data.replace(data[0:(data.find('\n'))], "")
-
-for i in range(len(a)):
-    a[i] = a[i] + "\n"
-
-for j in range(len(a)):
-    file2.write(a[j]) 
+    a[-1] = a[-1] + "\n"
+    file2.write(a[-1])
 
 file1.close()
 file2.close()
